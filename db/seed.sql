@@ -4,7 +4,7 @@ VALUES
     ('Sales'),
     ('Warehouse'),
     ('Finance'),
-    ('Human Resources')
+    ('Human Resources'),
     ('IT');
 
 INSERT INTO roles (title, salary, department_id)
@@ -23,12 +23,12 @@ VALUES
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
     ('Tim', 'Orsk', 1, NULL),
-    ('Sarah', 'Tisk', 2, 2),
+    ('Sarah', 'Tisk', 2, 1),
     ('Paul', 'Schaffer', 3, NULL),
     ('Jim', 'Fallen', 4, NULL),
-    ('Jack', 'Steele', 5, 5),
+    ('Jack', 'Steele', 5, 2),
     ('Reagon', 'Adler', 6, NULL),
     ('Jay', 'Mink', 7, NULL),
-    ('Jason', 'Taylor', 8, 8),
+    ('Jason', 'Taylor', 8, 3),
     ('Sam', 'Smith', 9, NULL),
-    ('Bill', 'Homertrout', 10, 10),
+    ('Bill', 'Homertrout', 10, 4);

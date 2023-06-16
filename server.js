@@ -25,7 +25,7 @@ const init = () => {
             }
         ])
         .then(res => {
-            switch (res.init) {
+            switch (res.start) {
                 case 'View all departments': viewDepartments();
                     break;
                 case 'View all roles': viewRoles();
@@ -37,6 +37,11 @@ const init = () => {
                 case 'Add a role': insertRole();
                     break;
                 case 'Add an employee': insertEmployee();
+                    break;
+                case 'Update an employee role': updateEmployeeRole();
+                    break;
+                default: console.log("Invalid choice");
+                    break;
             }
         })
         .catch(err => console.error(err));
@@ -46,10 +51,15 @@ init();
 
 const viewDepartments = () => {
     db.query(`SELECT * FROM departments`, (err, results) => {
-        if(err) throw err;
+        if(err) {
 
-        console.table(results);
-        init();
+            throw err;
+        } else {
+
+            console.table(results);
+            init();
+        }
+
     });
 };
 
