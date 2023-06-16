@@ -1,4 +1,3 @@
--- Insert multiple items -- 
 INSERT INTO departments (name)
 VALUES
     ('Web Development'),
@@ -21,7 +20,7 @@ VALUES
     ('Junior Developer', 55000, 1),
     ('Senior Developer', 125000, 1);
 
-INSERT INTO employees (first_name, last_name, role_id, department_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
     ('Tim', 'Orsk', 1, NULL),
     ('Sarah', 'Tisk', 2, 2),
@@ -31,5 +30,5 @@ VALUES
     ('Reagon', 'Adler', 6, NULL),
     ('Jay', 'Mink', 7, NULL),
     ('Jason', 'Taylor', 8, 8),
-    ('Jason', 'Taylor', 9, NULL),
-    ('Jason', 'Taylor', 10, 10),
+    ('Sam', 'Smith', 9, NULL),
+    ('Bill', 'Homertrout', 10, 10),
